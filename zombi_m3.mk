@@ -35,7 +35,7 @@ $(call inherit-product, vendor/zombi/config/common.mk)
 $(call inherit-product, device/oppo/m3/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_m3
+PRODUCT_NAME := zombi_m3
 PRODUCT_DEVICE := m3
 PRODUCT_BRAND := OPPO
 PRODUCT_MANUFACTURER := OPPO
