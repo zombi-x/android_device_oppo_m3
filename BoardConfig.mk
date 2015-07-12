@@ -122,6 +122,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # TWRP specific build flags
 TARGET_RECOVERY_FSTAB = device/oppo/m3/configs/fstab.qcom
+TARGET_RECOVERY_INITRC := device/oppo/m3/recovery/init.rc
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
