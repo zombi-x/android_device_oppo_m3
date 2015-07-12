@@ -55,16 +55,16 @@ void vendor_load_properties()
     }
     close(fd);
 
-    ERROR("libinit_r5: international=%d\n", international);
+    ERROR("libinit_m3: international=%d\n", international);
 
     if(international) {
-        property_set("ro.build.product", "R8106");
-        property_set("ro.product.model", "R8106");
-        property_set("ro.product.name", "R8106");
+        property_set("ro.build.product", "3006");
+        property_set("ro.product.model", "3006");
+        property_set("ro.product.name", "3006");
     } else {
-        property_set("ro.build.product", "R8107");
-        property_set("ro.product.model", "R8107");
-        property_set("ro.product.name", "R8107");
+        property_set("ro.build.product", "3007");
+        property_set("ro.product.model", "3007");
+        property_set("ro.product.name", "3007");
     }
 }
 

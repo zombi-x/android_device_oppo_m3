@@ -1,9 +1,9 @@
-# This file includes all definitions that apply to ALL r5 devices, and
-# are also specific to r5 devices
+# This file includes all definitions that apply to ALL m3 devices, and
+# are also specific to m3 devices
 #
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS := device/oppo/r5/overlay
+DEVICE_PACKAGE_OVERLAYS := device/oppo/m3/overlay
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
@@ -33,44 +33,44 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-        device/oppo/r5/configs/init.qcom.rc:root/init.qcom.rc \
-        device/oppo/r5/configs/init.target.rc:root/init.target.rc \
-        device/oppo/r5/configs/init.oppo.usb.rc:root/init.oppo.usb.rc \
-        device/oppo/r5/configs/init.qcom.usb.sh:root/init.qcom.usb.sh \
-        device/oppo/r5/configs/init.qcom.sh:root/init.qcom.sh \
-        device/oppo/r5/configs/ueventd.qcom.rc:root/ueventd.qcom.rc \
-        device/oppo/r5/configs/fstab.qcom:root/fstab.qcom \
-        device/oppo/r5/configs/twrp.fstab:recovery/root/etc/twrp.fstab \
-        device/oppo/r5/configs/init.recovery.qcom.rc:root/init.recovery.qcom.rc
+        device/oppo/m3/configs/init.qcom.rc:root/init.qcom.rc \
+        device/oppo/m3/configs/init.target.rc:root/init.target.rc \
+        device/oppo/m3/configs/init.oppo.usb.rc:root/init.oppo.usb.rc \
+        device/oppo/m3/configs/init.qcom.usb.sh:root/init.qcom.usb.sh \
+        device/oppo/m3/configs/init.qcom.sh:root/init.qcom.sh \
+        device/oppo/m3/configs/ueventd.qcom.rc:root/ueventd.qcom.rc \
+        device/oppo/m3/configs/fstab.qcom:root/fstab.qcom \
+        device/oppo/m3/configs/twrp.fstab:recovery/root/etc/twrp.fstab \
+        device/oppo/m3/configs/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 # Config files for touch and input
 PRODUCT_COPY_FILES += \
-	device/oppo/r5/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+	device/oppo/m3/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Audio config files
 PRODUCT_COPY_FILES += \
-	device/oppo/r5/configs/audio_policy.conf:system/etc/audio_policy.conf \
-	device/oppo/r5/configs/audio_effects.conf:system/etc/audio_effects.conf \
-	device/oppo/r5/configs/mixer_paths.xml:/system/etc/mixer_paths.xml
+	device/oppo/m3/configs/audio_policy.conf:system/etc/audio_policy.conf \
+	device/oppo/m3/configs/audio_effects.conf:system/etc/audio_effects.conf \
+	device/oppo/m3/configs/mixer_paths.xml:/system/etc/mixer_paths.xml
 
 
 # Media config files
 PRODUCT_COPY_FILES += \
-    device/oppo/r5/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    device/oppo/r5/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    device/oppo/m3/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    device/oppo/m3/configs/media_profiles.xml:system/etc/media_profiles.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
 # qcom init stuff
 PRODUCT_COPY_FILES += \
-	device/oppo/r5/configs/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-	device/oppo/r5/configs/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
-	device/oppo/r5/configs/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh
+	device/oppo/m3/configs/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+	device/oppo/m3/configs/init.qcom.uicc.sh:system/etc/init.qcom.uicc.sh \
+	device/oppo/m3/configs/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh
 
 # Wifi config
 PRODUCT_COPY_FILES += \
-	device/oppo/r5/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-	device/oppo/r5/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+	device/oppo/m3/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+	device/oppo/m3/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf
 
 PRODUCT_COPY_FILES += \
-	device/oppo/r5/configs/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
+	device/oppo/m3/configs/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
 # NFC packages
 PRODUCT_PACKAGES += \
@@ -155,7 +155,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-	device/oppo/r5/configs/gps.conf:system/etc/gps.conf
+	device/oppo/m3/configs/gps.conf:system/etc/gps.conf
 
 # Properties
 

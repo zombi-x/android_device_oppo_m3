@@ -1,16 +1,16 @@
 # inherit from the proprietary version
--include vendor/oppo/r5/BoardConfigVendor.mk
+-include vendor/oppo/m3/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := r5
-TARGET_OTA_ASSERT_DEVICE := r5,R8106,R8107
-TARGET_INIT_VENDOR_LIB := libinit_r5
+TARGET_BOOTLOADER_BOARD_NAME := m3
+TARGET_OTA_ASSERT_DEVICE := m3,R8106,R8107
+TARGET_INIT_VENDOR_LIB := libinit_m3
 TARGET_UNIFIED_DEVICE := true
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno405
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
 # Architecture
 TARGET_CPU_VARIANT := krait
@@ -28,7 +28,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_CUSTOM_BOOTIMG_MK := device/oppo/r5/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/oppo/m3/mkbootimg.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00F00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00F00000
@@ -37,7 +37,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # global
-TARGET_SPECIFIC_HEADER_PATH := device/oppo/r5/include
+TARGET_SPECIFIC_HEADER_PATH := device/oppo/m3/include
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
@@ -82,7 +82,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/r5/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/m3/bluetooth
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -97,7 +97,7 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/wlan.ko"
 WIFI_DRIVER_MODULE_NAME          := "wlan"
 
-BOARD_EGL_CFG := device/oppo/r5/configs/egl.cfg
+BOARD_EGL_CFG := device/oppo/m3/configs/egl.cfg
 
 # Compatibility with pre-kitkat Qualcomm sensor HALs
 SENSORS_NEED_SETRATE_ON_ENABLE := true
@@ -121,7 +121,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # TWRP specific build flags
-TARGET_RECOVERY_FSTAB = device/oppo/r5/configs/fstab.qcom
+TARGET_RECOVERY_FSTAB = device/oppo/m3/configs/fstab.qcom
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
