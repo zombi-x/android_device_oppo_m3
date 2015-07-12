@@ -6,7 +6,7 @@
 /tz            emmc     /dev/block/mmcblk0p8
 /modem_st1     emmc     /dev/block/mmcblk0p13
 /modem_st2     emmc     /dev/block/mmcblk0p14
-/static_nv_bk  emmc     /dev/block/mmcblk0p16
+/oppostanvbk   emmc     /dev/block/mmcblk0p16
 /oppodycnvbk   emmc     /dev/block/mmcblk0p15
 /aboot         emmc     /dev/block/mmcblk0p4
 /boot		   emmc		/dev/block/mmcblk0p25
